@@ -26,7 +26,7 @@
   
   .container {
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,10 +62,10 @@
   
   .hero {
     background-color: #fff;
-    padding: 2rem;
+    padding: 5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 3rem;
+    margin: 3rem;
   }
   
   .hero h1 {
@@ -89,4 +89,177 @@
   .footer p {
     font-size: 0.9rem;
   }
+/* Main content styling */
+.content {
+    padding: 100px 0 20px;
+    text-align: center;
+  }
   
+  /* Projects Section */
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Main container for cards (CSS Grid) */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card content styling */
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  /* Card image styling */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Dropdown (Initially Hidden) */
+  .card-dropdown {
+    display: none;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Dropdown visible when open class is added */
+  .card-dropdown.open {
+    display: block;
+    max-height: 500px; /* Adjust max-height for smooth transition */
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+  }
+
+  /* Card Content */
+  .card-content {
+    padding: 1.5rem;  /* More padding for larger cards */
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 1.75rem;  /* Larger title */
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-content p {
+    font-size: 1.125rem;  /* Larger description */
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #555;
+  }
+
+  .contact-section {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-section {
+      padding: 40px 0;
+    }
+    .contact-form button {
+      width: 100%;
+    }
+  }

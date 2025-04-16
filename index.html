@@ -14,10 +14,10 @@
       <a href="#" class="logo">My Website</a>
       <nav class="nav-links">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#top">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
     </div>
@@ -29,12 +29,86 @@
       <h1>Welcome to My Website</h1>
       <p>This is a basic webpage with a navbar. Feel free to customize it!</p>
     </section>
+
+    <div class="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="project-image-1.jpg" alt="Project 1">
+            <div class="card-content">
+              <h3>gitlet</h3>
+              <p>An abbreivated version of the popular version control system Git</p>
+              <a href="https://github.com/kcasbon/gitlet" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="card-dropdown">
+                <h4>Additional Details</h4>
+                <p>This section can include more information like tech stack, challenges faced, and results of the project.</p>
+              </div>
+            </div>
+          
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="project-image-2.jpg" alt="Project 2">
+            <div class="card-content">
+              <h3>Project Title 2</h3>
+              <p>A short description of your second project goes here. Explain what it does.</p>
+              <a href="https://github.com/your-username/project-2" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="card-dropdown">
+                <h4>Additional Details</h4>
+                <p>This section can include more information like tech stack, challenges faced, and results of the project.</p>
+              </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="project-image-3.jpg" alt="Project 3">
+            <div class="card-content">
+              <h3>Project Title 3</h3>
+              <p>A short description of your third project goes here. Explain what it does.</p>
+              <a href="https://github.com/your-username/project-3" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="card-dropdown">
+                <h4>Additional Details</h4>
+                <p>This section can include more information like tech stack, challenges faced, and results of the project.</p>
+              </div>
+            </div>
+            </div>
+            
+        </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out with any questions, feedback, or collaboration ideas!</p>
+      
+          <form action="https://formspree.io/f/xqapoaon" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+      
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 My Website. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
